@@ -24,7 +24,7 @@ for code in asx200['Code'].values:
 
 		# scan for P/E ratio < 10, P/B ratio < than 1, and DY > 5% 
 		if pe < 10 and pb < 1 and dy > 0.05:
-			print('{}\t\t{:.2f}\t{:.4f}\t{:.4f}').format(code, pe, pb, dy)
+			print('{}\t\t{:.2f}\t{:.4f}\t{:.4f}'.format(code, pe, pb, dy))
 
 	except KeyError:
 		# ignore tickers that don't have all of the targeted ticker stats
